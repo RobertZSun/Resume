@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>[简历]孙哲-前端Web开发工程师/北京</title>
+    <style>
+        h2 {
+            margin: 0;
+            margin-top: 5px;
+            margin-left: 15px;
+            padding: 0;
+        }
+
+
+
+        body {
+            background-image: url(./images/backgroundImage.jpg);
+        }
+
+        .canvas {
+            width: 900px;
+            height: 1250px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+        }
+
+        .self {
+            position: relative;
+        }
+
+        .avatar {
+            width: 145PX;
+            position: absolute;
+            float: right;
+            top: 55px;
+            right: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="canvas">
+            <!-- 个人信息 -->
+            <section class="self">
+                <h2>
+                    个人信息
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            姓名：孙哲
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            年龄：27
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            电话：<a href="tel:+8618904325813">18904325813</a>
+                        </h3>
+                    </li>
+                    <li>
+                        <h3>
+                            邮箱：<a href="mailto:robertsunzhe@hotmail.com">robertsunzhe@hotmail.com</a>
+                        </h3>
+                    </li>
+                </ul>
+                <img class="avatar" src="./images/self.png" alt="Selfie">
+            </section>
+
+            <!-- 教育经历 -->
+            <section class="edu">
+                <h2>
+                    教育经历
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h4>
+                            <span>Stevens Institute of Technology大学 - 软件工程专业（硕士） GPA：3.867</span>
+                            <time>2018.9-2020.5</time>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <span>吉林大学 - 电子科学与技术专业（本科）</span>
+                            <time>2013.9-2017.7</time>
+                        </h4>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project">
+                <h2>
+                    个人项目
+                </h2>
+                <hr />
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]在线服饰销售商店网站</span>
+                            <span class="link">
+                                <a href="https://shopcool-cloth.herokuapp.com/" target="_blank">Demo</a>
+                            </span>
+                            <time>2019.11-2019.2</time>
+                        </h3>
+                        <h4>个人独立开发和部署，包含购物车、用户登录、商品展览页等多个模块</h4>
+                        <ol class="info-content">
+                            <li>
+                                <p>
+                                    运用React搭建项目基础框架，选取Redux进行数据和状态管理，Redux-Thunk处理异步请求。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    使用local storage 封装离线数据缓存，搭配Google Firebase 实现本站和Google帐户第三方登录
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    采用高阶组件（HOC）和State normalization进行Dom渲染优化，提升用户体验和加载性能。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    配置Cloud Firestore作为数据库，在Heroku上部署应用，自动生成正式版本
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]电商后台管理系统</span>
+                            <time>2017.11-2018.10</time>
+                        </h3>
+                        <h4>一款用于处理、分析和管理电商数据的综合性平台，包含订单处理、数据分析和可视化等功能</h4>
+                        <ol class="info-content">
+                            <li>
+                                <p>
+                                    使用Vue + VueRouter构建单页面应用，配合Element-Ui组件进行页面布局，Echarts实现数据可视化
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    页面采用Session storage保持用户会话状态，搭配local storage 实现离线数据缓存。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    拆分组件，利用路由懒加载功能，实现组件访问按需加载，提高了应用加载速度，降低了重复加载频率
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    配置Webpack+Gzip实现上线代码打包压缩，并进行Tree shaking、Code Splitting等优化。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    运用Sass编写灵活的Css代码，通过font-awesome引用图标字体等资源，通过CDN减少网络延迟。
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]个人博客系统 </span>
+                            <span class="link">
+                                <a href="http://www.robertzsun.com" target="_blank">Demo</a>
+                            </span>
+                            <time>2017.03-2017.10</time>
+                        </h3>
+                        <h4>一款个人博客系统，独立开发和部署，包含用户创建、文章发布等功能</h4>
+                        <ol class="info-content">
+                            <li>
+                                <p>
+                                    运用Bootstrap3进行页面响应式布局，采用art-template模板引擎进行服务端渲染。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    使用 Express搭建web服务器，搭配MongoDB进行数据存储，通过morgan中间件进行调试。
+                                </p>
+
+                            </li>
+                            <li>
+                                <p>
+                                    采用Bcrypt、Joi模块对密码等敏感信息进行加密和数据验证， 使用Express-session保持用户登录状态
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    配置Webpack+Gzip实现上线代码打包压缩，并进行Tree shaking、Code Splitting等优化。
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    部署在AWS EC2 ubuntu服务器，使用了Cloudflare来提供DNS服务
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
